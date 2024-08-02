@@ -1,0 +1,35 @@
+#main {
+    height: 100vh;
+}
+
+
+.searchBar {
+    position: absolute;
+    right: 43vw;
+  }
+  
+  #suggestionsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  #suggestionsList li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #suggestionsList li:hover {
+    background-color: #ddd;
+  }

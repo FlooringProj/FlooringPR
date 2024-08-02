@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="search.css">
+        <script src="searchJ.js"></script>
+    </head>
+    <body id="main" onclick="stopShow()">
+        <form class="searchBar" id="searchForm" onsubmit="search()">
+            <input type="search" id="searchInput" oninput="getSuggestions(this.value)">
+            <ul id="suggestionsList">
+            </ul>
+        </form>
+    </body>
+</html>

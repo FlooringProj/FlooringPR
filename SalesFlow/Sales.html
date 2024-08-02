@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="..\commonCSS\common.css">
+        <script src="..\scripts\script.js"></script>
+    </head>
+    <body id="main" onclick="stopShow()">
+        <h1 class="titleContainer">The Flooring Marketplace</h1>
+        <section class="boxWrapper"> 
+        </section>
+        <section class="iconContainer">
+            <div class="homeIcon">
+                <img src="..\iconFolder\homeIcon.png" onclick="window.location.href='..\\HomeWindow\\Home.html'">
+            </div>
+            <div class="userIcon">
+                <img src="..\iconFolder\shareIcon.png">
+            </div>
+            <div class="shareIcon">
+                <img src="..\iconFolder\userIcon.png">
+            </div>
+        </section>
+
+        <div id="sideMenu">
+            <div class="menu" onclick="change(this)">
+            </div>
+            <ul>
+                <li><a href="../LandingPage/index.html">Landing</a></li>
+                <li>HI</li>
+                <li>Grand</li>
+                <li>Twink</li>
+            </ul>
+        </div>
+
+        <div class="menuIcon" onclick="change(this)">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
+
+        <div class="searchContainer">
+            <form action="" id="searchForm" onsubmit="search()">
+                <input type="text" placeholder="Vendor Search..." class="inp" id="searchInput" oninput="getSuggestions(this.value)">
+                <ul id="suggestionsList">
+                </ul>
+            </form>
+        </div>
+        <section class="boxContainer">
+            <button class="Box1" style="background-color: greenyellow;" onclick="window.location.href='PriceD.html'"><p1>Price Drops</p1></button>
+            <button class="Box2" style="background-color: greenyellow;" onclick="window.location.href='SalesInfo.html'"><p1>Sales Information</p1></button>
+            <button class="Box3" style="background-color: greenyellow;" onclick="window.location.href='PromoMat.html'"><p1>Promotional Material</p1></button>
+            <button class="Box4" style="background-color: greenyellow;" onclick="window.location.href='LocalEvents.html'"><p1 style="transform: translateY(-1vh);">Local events & useful contact info</p1></button>
+        </section>
+        </body>
+    </html>
