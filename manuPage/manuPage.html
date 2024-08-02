@@ -5,11 +5,11 @@
         <link rel="stylesheet" href="..\commonCSS\common.css">
         <script src="..\scripts\script.js"></script>
     </head>
-    <body>
+    <body id="main" onclick="stopShow()">
         <h1 class="titleContainer">The Flooring Marketplace</h1>
         <section class="iconContainer">
             <div class="homeIcon">
-                <img src="..\iconFolder\homeIcon.png">
+                <img src="..\iconFolder\homeIcon.png" onclick="window.location.href='..\\HomeWindow\\Home.html'">
             </div>
             <div class="userIcon">
                 <img src="..\iconFolder\shareIcon.png">
@@ -23,7 +23,7 @@
             <div class="menu" onclick="change(this)">
             </div>
             <ul>
-                <li>HELLO</li>
+                <li><a href="../LandingPage/index.html">Landing</a></li>
                 <li>HI</li>
                 <li>Grand</li>
                 <li>Twink</li>
@@ -37,10 +37,13 @@
         </div>
 
         <div class="searchContainer">
-            <form action="" id="searchForm">
-                <input type="text" placeholder="Vendor Search..." class="inp" id="search-bar">
+            <form action="" id="searchForm" onsubmit="search()">
+                <input type="text" placeholder="Vendor Search..." class="inp" id="searchInput" oninput="getSuggestions(this.value)">
+                <ul id="suggestionsList">
+                </ul>
             </form>
         </div>
+
         <section class="boxContainer">
             <div class="Box1"><p1>Warranty Sheets</p1></div>
             <div class="Box2"><p1>Mainenance Sheet</p1></div>

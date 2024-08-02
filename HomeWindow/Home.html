@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="..\commonCSS\common.css">
         <script src="..\scripts\script.js"></script>
     </head>
-    <body>
+    <body id="main" onclick="stopShow()">
         <h1 class="titleContainer">The Flooring Marketplace</h1>
         <section class="boxWrapper"> 
         </section>
@@ -25,7 +25,7 @@
             <div class="menu" onclick="change(this)">
             </div>
             <ul>
-                <li><a href="../LandingPage/index.html">HELLO</a></li>
+                <li><a href="../LandingPage/index.html">Landing</a></li>
                 <li>HI</li>
                 <li>Grand</li>
                 <li>Twink</li>
@@ -39,15 +39,18 @@
         </div>
 
         <div class="searchContainer">
-            <form action="" id="searchForm">
-                <input type="text" placeholder="Vendor Search..." class="inp" id="search-bar">
+            <form action="" id="searchForm" onsubmit="search()">
+                <input type="text" placeholder="Vendor Search..." class="inp" id="searchInput" oninput="getSuggestions(this.value)">
+                <ul id="suggestionsList">
+                </ul>
             </form>
         </div>
         <section class="boxContainer">
             <button class="Box1" onclick="window.location.href='..\\MarketingPage\\market.html'"><p1>Price Books</p1></button>
             <button class="Box2" onclick="window.location.href='..\\ManuPage\\manuPage.html'"><p1>Manufactures Information</p1></button>
-            <button class="Box3" onclick="window.location.href='..\\SalesPage\\Sales.html'"><p1>Sales</p1></button>
-            <button class="Box4" onclick="window.location.href='..\\OrdersPage\\Orders.html'"><p1>Orders & History</p1></button>
+            <button class="Box3" onclick="window.location.href='..\\SalesFlow\\Sales.html'"><p1>Sales</p1></button>
+            <button class="Box4" onclick="window.location.href='..\\OrdersFlow\\Orders.html'"><p1>Orders & History</p1></button>
         </section>
+        
         </body>
     </html>

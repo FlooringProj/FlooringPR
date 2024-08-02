@@ -64,10 +64,39 @@ h1 {
 
 }
 
-#search-bar {
+#searchInput {
     height: 3vh;
     font-size: 2vh;
 }
+
+
+
+#suggestionsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+  
+#suggestionsList li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+#suggestionsList li:hover {
+    background-color: #ddd;
+}
+
 
 .inp {
     width: 15vw;
@@ -100,7 +129,8 @@ h1 {
 .Box1 p1 {
     text-align: center;
     align-self: center;
-    padding-top: 4%;
+    font-size: 1vw;
+    padding-top: 2.5%;
 }
 
 
@@ -124,7 +154,8 @@ h1 {
 .Box2 p1 {
     text-align: center;
     align-self: center;
-    padding-top: 4%;
+    font-size: 1vw;
+    padding-top: 2.5%;
 }
 
 .Box3 {
@@ -146,7 +177,8 @@ h1 {
 .Box3 p1 {
     text-align: center;
     align-self: center;
-    padding-top: 4%;
+    font-size: 1vw;
+    padding-top: 2.5%;
 }
 
 .Box4 {
@@ -168,7 +200,8 @@ h1 {
 .Box4 p1 {
     text-align: center;
     align-self: center;
-    padding-top: 4%;
+    font-size: 1vw;
+    padding-top: 2.5%;
 }
 
 
@@ -221,6 +254,7 @@ li {
 .menuIcon.change {
     left: 13vw;
 }
+
 
 .bar1, .bar2, .bar3{
     width: 70%;
